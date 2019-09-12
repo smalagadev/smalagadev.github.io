@@ -1,3 +1,5 @@
+console.log('hello');
+
 const loadSection = function(section){
   const currentSection = document.getElementById(section = sessionStorage.getItem('currentSection'));
   // If any active nav-link, remove active

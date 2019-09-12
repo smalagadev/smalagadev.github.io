@@ -1,43 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Steffano's Portfolio</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <script type="text/javascript" src="assets/script.js"></script>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="navbar-brand">Steffano's Portfolio</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <dive class="nav-item nav-link" id="about-link" to="/About"><i class="fas fa-user-alt"></i> About</dive>
+          <dive class="nav-item nav-link" id="project-link" to="/Projects"><i class="fas fa-suitcase"></i> Projects</dive>
+          <dive class="nav-item nav-link" id="contact-link" to="/Contact"><i class="far fa-address-card"></i> Contact Me</dive>
+          <a class="nav-item nav-link" href="https://medium.com/@smalagadev"><div><i class="fab fa-medium"></i> Blog</div></a>
+        </div>
+      </div>
+    </nav>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<!--
+    <div class="display" id="Projects">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div class="content row">
+      <div class="card col-md-4" id="project-preview">
+        <img src="assets/images/placeholder.png" class="card-img" alt="Site Preview" id="project-image"/>
+        <div class="card-body">
+          <h5 class="card-title" id="project-title">Click on any project to get a description.</h5>
+          <p class="card-text" id="project-details"></p>
+          <div class="btn-group btn-block btn-group-dark btn-group-justified">
+            <a href="#" class="btn btn-dark bg-dark" id="page-link">Visit Page</a>
+            <a href="#" class="btn btn-dark bg-dark" id="github-link">Visit Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-group col-md-8"  id="project-list">
+        <h1 class="bg-dark list-group-item list-group-item-dark list-group-item-action active">Projects</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="display" id="Contact">
+    <div class="content row">
+      <div class="form-group col-md-7">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" />
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" id="email" />
+        <label for="message">Message:</label>
+        <textarea class="form-control" rows="8" id="message"></textarea>
+        <button type="submit" class="btn btn-dark bg-dark btn-block">Submit</button>
+      </div>
+
+      <div class="container-fluid col-md-5">
+        <div class="card">
+          <div class="card-header">YOU CAN CONTACT ME AT MY EMAIL.</div>
+          <div class="card-body">
+            <p class="card-text" id="email"><i class="fa fa-envelope"></i> SMALAGADEV@GMAIL.COM</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">YOU CAN ALSO FIND ME ON SOCIAL MEDIA.</div>
+          <div class="card-body">
+            <ul class="list-inline" id="social-media">
+              <li class="list-inline-item flex-fill">
+                <a href="https://github.com/smalagadev"><i class="fab fa-github-square"></i> GITHUB</a>
+              </li>
+              <li class="list-inline-item flex-fill">
+                <a href="https://linkedin.com/in/smalagadev"><i class="fab fa-linkedin"></i> LINKEDIN</a>
+              </li>
+              <li class="list-inline-item flex-fill">
+                <a href="https://stackoverflow.com/users/10959509/s-dev"><i class="fab fa-stack-overflow"></i>STACK OVERFLOW</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="display" id="About">
+    <div class="content container-fluid row">
+      <div class="card col-md-4" id="profile">
+        <img src="assets/images/profile.png" class="card-img-top img-fluid" id="profile-image" alt="STEFFANO"/>
+        <div class="card-body">
+        <h3 class="card-title text-center">Steffano Malaga</h3>
+
+        <a href="assets/Resume_Steffano_Malaga.pdf"  download>
+          <div class="btn btn-block btn-dark bg-dark"><i class="far fa-file-pdf"></i> DOWNLOAD RESUMÉ</div>
+        </a>
+        </div>
+      </div>
+
+      <div class="col-md-8 row">
+        <div class="container-fluid" id="biography">
+          <p class="text-justify">
+            Born and raised in Fort Lauderdale, I attended Florida Atlantic University
+            and graduated with a degree in Computer Science. I moved to Atlanta
+            and enrolled in the Georgia Tech Coding Bootcamp to sharpen and enhance my
+            skill set.
+          </p>
+          <p class="text-justify">
+            I've always been interested in software and hardware technologies; knowing
+            what they could do and understanding how they work. I have practiced several
+            programming languages overall experience coding. When I'm not programming, you'll
+            find me skateboarding, filming, video editing, or any combination of all three.
+          </p>
+          <br/>
+          <p class="text-center h4">Technologies I've worked with:</p>
+          <ul class="list-inline" id="skillset">
+            <li class="list-inline-item">HTML5</li>
+            <li class="list-inline-item">CSS3</li>
+            <li class="list-inline-item">JavaScript</li>
+            <li class="list-inline-item">Python</li>
+            <li class="list-inline-item">Git</li>
+            <li class="list-inline-item">JQuery</li>
+            <li class="list-inline-item">SQL</li>
+            <li class="list-inline-item">MongoDB</li>
+            <li class="list-inline-item">Express.js</li>
+            <li class="list-inline-item">React.js</li>
+            <li class="list-inline-item">Node.js</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
   </body>
 </html>
