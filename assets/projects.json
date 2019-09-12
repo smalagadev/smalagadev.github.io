@@ -1,0 +1,49 @@
+const wordGuessGame = {
+   name:'Word Guess Game',
+   picture: 'assets/images/Word-Guess-Game.png',
+   description: 'A word guessing game made of JavaScript with Skate video theme.',
+   link: 'https://smalagadev.github.io/Word-Guess-Game/',
+   github: 'https://github.com/smalagadev/Word-Guess-Game'
+ }
+
+const starWarsRPG = {
+  name:'Star Wars RPG',
+  picture: 'assets/images/Star-Wars-RPG.png',
+  description: 'A Star Wars RPG made of JavaScript and JQuery.',
+  link: 'https://smalagadev.github.io/Rogue-Squadron-RPG/',
+  github: 'https://github.com/smalagadev/Rogue-Squadron-RPG'
+}
+
+const timedQuiz = {
+   name:'Timed Quiz',
+   picture: 'assets/images/Timed-Quiz.png',
+   description: 'A timed quiz made of JavaScript.',
+   link: 'https://smalagadev.github.io/Timed-Quiz/',
+   github: 'https://github.com/smalagadev/Timed-Quiz'
+ }
+
+const giphyAPI = {
+  name:'GIPHY API Assignment',
+  picture: 'assets/images/GIPHY-API-Assignment.png',
+  description: 'A page that uses the GIPHY API and JavaScript.',
+  link: 'https://smalagadev.github.io/GIPHY-API-Assignment',
+  github: 'https://github.com/smalagadev/GIPHY-API-Assignment'
+}
+
+const soundBars = {
+   name:'SoundBars',
+   picture: 'assets/images/SoundBars.png',
+   description: 'An artist previewing site utilizing Spotify and Youtube\'s API. A collaborated team effort focusing on javascript, jquery, and API usage.',
+   link: 'https://mahinjiwani.github.io/Project1/',
+   github: 'https://github.com/mahinjiwani/Project1'
+ }
+
+const LIRI = {
+  name:'LIRI BOT',
+  picture: 'assets/images/LIRI-BOT.png',
+  description: 'LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data. There is no site link.',
+  link: '',
+  github: 'https://github.com/smalagadev/LIRI'
+}
+
+const projects = [wordGuessGame, starWarsRPG, timedQuiz, giphyAPI, soundBars, LIRI];
