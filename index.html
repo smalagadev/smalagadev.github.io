@@ -5,131 +5,108 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/script.js"></script>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="navbar-brand">Steffano's Portfolio</div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <dive class="nav-item nav-link" id="about-link" to="/About"><i class="fas fa-user-alt"></i> About</dive>
-          <dive class="nav-item nav-link" id="project-link" to="/Projects"><i class="fas fa-suitcase"></i> Projects</dive>
-          <dive class="nav-item nav-link" id="contact-link" to="/Contact"><i class="far fa-address-card"></i> Contact Me</dive>
-          <a class="nav-item nav-link" href="https://medium.com/@smalagadev"><div><i class="fab fa-medium"></i> Blog</div></a>
-        </div>
+    <div id="" class="container-fluid row">
+      <div class="container col-2">
+        <ul id="navbar">
+          <li><a href="#">STEFFANO MALAGA</a></li>
+          <li><a href="#Projects">PROJECTS</a></li>
+          <li><a href="#Contact">CONTACT ME</a></li>
+          <hr/>
+        </ul>
+
       </div>
-    </nav>
 
-<!--
-    <div class="display" id="Projects">
-
-    <div class="content row">
-      <div class="card col-md-4" id="project-preview">
-        <img src="assets/images/placeholder.png" class="card-img" alt="Site Preview" id="project-image"/>
-        <div class="card-body">
-          <h5 class="card-title" id="project-title">Click on any project to get a description.</h5>
-          <p class="card-text" id="project-details"></p>
-          <div class="btn-group btn-block btn-group-dark btn-group-justified">
-            <a href="#" class="btn btn-dark bg-dark" id="page-link">Visit Page</a>
-            <a href="#" class="btn btn-dark bg-dark" id="github-link">Visit Repo</a>
+      <div class="container col-10">
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Steffano Malaga</h5>
+                <p class="card-text">
+                  Born and raised in Fort Lauderdale, I attended Florida Atlantic University
+                  and graduated with a degree in Computer Science. I moved to Atlanta
+                  and enrolled in the Georgia Tech Coding Bootcamp to sharpen and enhance my
+                  skill set.
+                </p>
+                <p class="card-text">
+                  I've always been interested in software and hardware technologies; knowing
+                  what they could do and understanding how they work. I have practiced several
+                  programming languages overall experience coding. When I'm not programming, you'll
+                  find me skateboarding, filming, video editing, or any combination of all three.
+                </p>
+                <a href="assets/Resume_Steffano_Malaga.pdf"  download>
+                  <div class=""><i class="far fa-file-pdf"></i> DOWNLOAD RESUMÉ</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/images/profile.jpg" class="card-img">
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="list-group col-md-8"  id="project-list">
-        <h1 class="bg-dark list-group-item list-group-item-dark list-group-item-action active">Projects</h1>
-      </div>
-    </div>
-  </div>
+        <div id="Projects" class="section col-md-10">
+          <div class="display" id="Projects">
 
-  <div class="display" id="Contact">
-    <div class="content row">
-      <div class="form-group col-md-7">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" />
-        <label for="email">Email:</label>
-        <input type="text" class="form-control" id="email" />
-        <label for="message">Message:</label>
-        <textarea class="form-control" rows="8" id="message"></textarea>
-        <button type="submit" class="btn btn-dark bg-dark btn-block">Submit</button>
-      </div>
-
-      <div class="container-fluid col-md-5">
-        <div class="card">
-          <div class="card-header">YOU CAN CONTACT ME AT MY EMAIL.</div>
-          <div class="card-body">
-            <p class="card-text" id="email"><i class="fa fa-envelope"></i> SMALAGADEV@GMAIL.COM</p>
+            <div class="content row">
+              <div class="list-group col-md-8"  id="project-list">
+                <h1 class="bg-dark list-group-item list-group-item-dark list-group-item-action active">Projects</h1>
+              </div>
+              <div class="card col-md-4" id="project-preview">
+                <img src="" class="card-img" alt="Site Preview" id="project-image"/>
+                <div class="card-body">
+                  <h5 class="card-title" id="project-title">Click on any project to get a description.</h5>
+                  <p class="card-text" id="project-details"></p>
+                  <div class="btn-group btn-block btn-group-dark btn-group-justified">
+                    <a href="#" class="btn btn-dark bg-dark" id="page-link">Visit Page</a>
+                    <a href="#" class="btn btn-dark bg-dark" id="github-link">Visit Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header">YOU CAN ALSO FIND ME ON SOCIAL MEDIA.</div>
-          <div class="card-body">
-            <ul class="list-inline" id="social-media">
-              <li class="list-inline-item flex-fill">
-                <a href="https://github.com/smalagadev"><i class="fab fa-github-square"></i> GITHUB</a>
-              </li>
-              <li class="list-inline-item flex-fill">
-                <a href="https://linkedin.com/in/smalagadev"><i class="fab fa-linkedin"></i> LINKEDIN</a>
-              </li>
-              <li class="list-inline-item flex-fill">
-                <a href="https://stackoverflow.com/users/10959509/s-dev"><i class="fab fa-stack-overflow"></i>STACK OVERFLOW</a>
-              </li>
-            </ul>
+
+        <div class="container-fluid col-md-12">
+          <div class="card">
+            <div class="card-header">YOU CAN CONTACT ME AT MY EMAIL.</div>
+            <div class="card-body">
+              <p class="card-text" id="email"><i class="fa fa-envelope"></i> SMALAGADEV@GMAIL.COM</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">YOU CAN ALSO FIND ME ON SOCIAL MEDIA.</div>
+            <div class="card-body">
+              <ul class="list-inline" id="social-media">
+                <li class="list-inline-item flex-fill">
+                  <a href="https://github.com/smalagadev"><i class="fab fa-github-square"></i> GITHUB</a>
+                </li>
+                <li class="list-inline-item flex-fill">
+                  <a href="https://linkedin.com/in/smalagadev"><i class="fab fa-linkedin"></i> LINKEDIN</a>
+                </li>
+                <li class="list-inline-item flex-fill">
+                  <a href="https://stackoverflow.com/users/10959509/s-dev"><i class="fab fa-stack-overflow"></i>STACK OVERFLOW</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="display" id="About">
-    <div class="content container-fluid row">
-      <div class="card col-md-4" id="profile">
-        <img src="assets/images/profile.png" class="card-img-top img-fluid" id="profile-image" alt="STEFFANO"/>
-        <div class="card-body">
-        <h3 class="card-title text-center">Steffano Malaga</h3>
-
-        <a href="assets/Resume_Steffano_Malaga.pdf"  download>
-          <div class="btn btn-block btn-dark bg-dark"><i class="far fa-file-pdf"></i> DOWNLOAD RESUMÉ</div>
-        </a>
-        </div>
-      </div>
-
-      <div class="col-md-8 row">
-        <div class="container-fluid" id="biography">
-          <p class="text-justify">
-            Born and raised in Fort Lauderdale, I attended Florida Atlantic University
-            and graduated with a degree in Computer Science. I moved to Atlanta
-            and enrolled in the Georgia Tech Coding Bootcamp to sharpen and enhance my
-            skill set.
-          </p>
-          <p class="text-justify">
-            I've always been interested in software and hardware technologies; knowing
-            what they could do and understanding how they work. I have practiced several
-            programming languages overall experience coding. When I'm not programming, you'll
-            find me skateboarding, filming, video editing, or any combination of all three.
-          </p>
-          <br/>
-          <p class="text-center h4">Technologies I've worked with:</p>
-          <ul class="list-inline" id="skillset">
-            <li class="list-inline-item">HTML5</li>
-            <li class="list-inline-item">CSS3</li>
-            <li class="list-inline-item">JavaScript</li>
-            <li class="list-inline-item">Python</li>
-            <li class="list-inline-item">Git</li>
-            <li class="list-inline-item">JQuery</li>
-            <li class="list-inline-item">SQL</li>
-            <li class="list-inline-item">MongoDB</li>
-            <li class="list-inline-item">Express.js</li>
-            <li class="list-inline-item">React.js</li>
-            <li class="list-inline-item">Node.js</li>
-          </ul>
+        <div class="jumbotron jumbotron-fluid">
+          <h1 class="display-4">You can contact me at my email.</h1>
+          <p class="lead">smalagadev@gmail.com</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
       </div>
     </div>
-  </div> -->
   </body>
 </html>
