@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/stylesheet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -25,35 +26,30 @@
       </div>
 
       <div class="container col-10">
-        <div class="card mb-3">
-          <div class="row no-gutters">
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Steffano Malaga</h5>
-                <p class="card-text">
-                  Born and raised in Fort Lauderdale, I attended Florida Atlantic University
-                  and graduated with a degree in Computer Science. I moved to Atlanta
-                  and enrolled in the Georgia Tech Coding Bootcamp to sharpen and enhance my
-                  skill set.
-                </p>
-                <p class="card-text">
-                  I've always been interested in software and hardware technologies; knowing
-                  what they could do and understanding how they work. I have practiced several
-                  programming languages overall experience coding. When I'm not programming, you'll
-                  find me skateboarding, filming, video editing, or any combination of all three.
-                </p>
-                <a href="assets/Resume_Steffano_Malaga.pdf"  download>
-                  <div class=""><i class="far fa-file-pdf"></i> DOWNLOAD RESUMÉ</div>
-                </a>
+        <div class="section">
+          <div class="card mb-3" id="About">
+            <div class="row no-gutters">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Steffano Malaga</h1>
+                  <p class="card-text">
+                    I am a full stack web developer based in Atlanta, Georgia. I enjoy innovating solutions
+                    and creating new technology. I enjoy problem solving
+                    I have  experience with core web technologies with a focus on the MERN (Mongo, Express, React, and Node) stack.
+                    Download my <a href="assets/Resume_Steffano_Malaga.pdf" download>resumé</a> to learn more about me.
+                  </p>
+
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="assets/images/profile.jpg" class="card-img" id="profile-image">
               </div>
             </div>
-            <div class="col-md-4">
-              <img src="assets/images/profile.jpg" class="card-img">
-            </div>
+            <hr/>
           </div>
         </div>
 
-        <div id="Projects" class="section col-md-10">
+        <div id="Projects" class="section">
           <div class="display" id="Projects">
 
             <div class="content row">
@@ -75,36 +71,22 @@
           </div>
         </div>
 
-        <div class="container-fluid col-md-12">
-          <div class="card">
-            <div class="card-header">YOU CAN CONTACT ME AT MY EMAIL.</div>
-            <div class="card-body">
-              <p class="card-text" id="email"><i class="fa fa-envelope"></i> SMALAGADEV@GMAIL.COM</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">YOU CAN ALSO FIND ME ON SOCIAL MEDIA.</div>
-            <div class="card-body">
-              <ul class="list-inline" id="social-media">
-                <li class="list-inline-item flex-fill">
-                  <a href="https://github.com/smalagadev"><i class="fab fa-github-square"></i> GITHUB</a>
-                </li>
-                <li class="list-inline-item flex-fill">
-                  <a href="https://linkedin.com/in/smalagadev"><i class="fab fa-linkedin"></i> LINKEDIN</a>
-                </li>
-                <li class="list-inline-item flex-fill">
-                  <a href="https://stackoverflow.com/users/10959509/s-dev"><i class="fab fa-stack-overflow"></i>STACK OVERFLOW</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="jumbotron jumbotron-fluid">
-          <h1 class="display-4">You can contact me at my email.</h1>
-          <p class="lead">smalagadev@gmail.com</p>
-          <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="section container-fluid" id="Contact">
+          <h2>YOU CAN CONTACT MY EMAIL:</h2>
+           <p class="display-4" id="email">SMALAGADEV@GMAIL.COM</p>
+          <br/>
+          <ul class="list-inline" id="social-media">
+            <h2>YOU CAN ALSO FIND ME ON THESE PLATFORMS:</h2>
+            <li class="display-4">
+              <a href="https://github.com/smalagadev">GITHUB</a>
+            </li>
+            <li class="display-4">
+              <a href="https://linkedin.com/in/smalagadev">LINKEDIN</a>
+            </li>
+            <li class="display-4">
+              <a href="https://stackoverflow.com/users/10959509/s-dev">STACK OVERFLOW</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
