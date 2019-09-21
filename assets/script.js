@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function(){
     col4_link.textContent = "Visit Repo";
     col4_link.setAttribute("href", project.github);
     col4.appendChild(col4_link);
-    // newItem.appendChild(col1).appendChild(col2).appendChild(col3).appendChild(col4);
     newItem.appendChild(col1);
     newItem.appendChild(col2);
     newItem.appendChild(col3);
