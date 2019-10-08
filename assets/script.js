@@ -51,22 +51,12 @@ document.addEventListener("DOMContentLoaded", function(){
     const newItem = document.createElement('tr');
     const col1 = document.createElement('td');
     const col2 = document.createElement('td');
-    const col3 = document.createElement('td');
-    const col3_link = document.createElement('a');
-    const col4 = document.createElement('td');
-    const col4_link = document.createElement('a');
+    const site = document.createElement('a');
+    const repo = document.createElement('a');
     col1.textContent = project.name;
-    col2.textContent = project.description;
-    col3_link.textContent = "Visit Site";
-    col3_link.setAttribute("href", project.link);
-    col3.appendChild(col3_link);
-    col4_link.textContent = "Visit Repo";
-    col4_link.setAttribute("href", project.github);
-    col4.appendChild(col4_link);
+    project.link ? col2.innerHTML = `${project.description} Visit the <a href="${project.link}">project</a> or the <a href="${project.github}">repository</a>.` : col2.innerHTML = `${project.description} Visit the <a href="${project.github}">repository</a>.`;
     newItem.appendChild(col1);
     newItem.appendChild(col2);
-    newItem.appendChild(col3);
-    newItem.appendChild(col4);
     projectList.appendChild(newItem);
   });
 
