@@ -9,13 +9,13 @@ a, a:hover, a:visited, #email {
 }
 
 
-#navbar {
+/* #navbar {
   position: fixed;
   list-style-type: none;
   padding-left: 0px;
   padding-right: 0px;
   height: 100vh;
-}
+} */
 #navbar li {
   margin-top: 5px;
   padding-top: 5px;
@@ -50,5 +50,9 @@ a, a:hover, a:visited, #email {
 }
 
 td {
-  font-size: 1rem; 
+  font-size: 1rem;
+}
+
+.table {
+  overflow-y: scroll;
 }
