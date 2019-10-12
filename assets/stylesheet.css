@@ -1,15 +1,3 @@
-@media (min-width: 1024px){
-  .section {
-    max-width: 100%;
-    height: 100vh;
-    padding: 30px;
-    font-size: 1.5rem;
-    padding: 60px 35px;
-  }
-
-
-}
-
 html, body{
   margin: 0px;
   padding: 0px;
@@ -19,8 +7,6 @@ a, a:hover, a:visited, #email {
   color: #4B2872;
   -webkit-text-fill-color: #4B2872;
 }
-
-
 
 #navbar li {
   margin-top: 5px;
@@ -36,18 +22,57 @@ a, a:hover, a:visited, #email {
   background-color: #4B2872;
 }
 
-
-
 #About {
   border-style: none;
 }
 
-#profile-image {
-  height: auto;
-  width: 100%;
-  border-radius: 50%;
+@media (max-width: 768px){
+  #profile-image {
+    height: auto;
+    width: 75%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.contact{
+    font-size: 0.95em;
+  }
 }
 
-td {
-  font-size: 1rem;
+@media (min-width: 768px){
+  #profile-image {
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  p.contact{
+    font-size: 1.75rem;
+  }
+
+  ul#social-media li a, #email{
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .section {
+    max-width: 100%;
+    height: 100vh;
+    padding: 60px 0px;
+  }
+
+  ul#social-media li a, #email{
+    font-size: 2rem;
+  }
+
+  p.contact{
+    font-size: 2rem;
+  }
+
+  p.card-text{
+    font-size: 2.5rem;
+  }
 }
