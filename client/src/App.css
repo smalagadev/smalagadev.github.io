@@ -1,40 +1,10 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Press Start 2P', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.owl {
+  background-color: black;
+  border: 4px red solid;
 }
 
 html, body{
@@ -45,20 +15,6 @@ html, body{
 a, a:hover, a:visited, #email {
   color: #4B2872;
   -webkit-text-fill-color: #4B2872;
-}
-
-#navbar li {
-  margin-top: 5px;
-  padding-top: 5px;
-}
-
-#navbar li a {
-  text-decoration: none;
-}
-
-#navbar li a:hover {
-  -webkit-text-fill-color: #FFFFFF;
-  background-color: #4B2872;
 }
 
 #About {
@@ -102,6 +58,7 @@ a, a:hover, a:visited, #email {
     height: 100vh;
     padding: 60px 0px;
   }
+
 
   ul#social-media li a, #email{
     font-size: 2rem;

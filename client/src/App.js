@@ -1,21 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
+import NavigationBar from './components/NavigationBar';
+import Container from 'react-bootstrap/Container';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
 import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import Projects from './pages/Projects'
 
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <NavigationBar/>
+      <Container bsPrefix="owl" fluid>
         <Switch>
-          <Route path="/" exact component={About}/>
+          <Route path="/" exact component={Home}/>
+          <Route path="/About" component={About}/>
+          <Route path="/Skills" component={Skills}/>
           <Route path="/Projects" component={Projects}/>
-          <Route path="Contact" component={Contact}/>
+          <Route path="/Contact" component={Contact}/>
         </Switch>
-      </Router>
+      </Container>
+    </Router>
   );
 }
 
