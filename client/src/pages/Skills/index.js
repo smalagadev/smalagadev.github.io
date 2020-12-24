@@ -1,7 +1,7 @@
 function Skills(){
   return(
     <>
-    <h1>Skill</h1>
+    <h1>Skills</h1>
     <p>
       I am a full stack developer with a focus on the front end. Over my years of learning programming, I
       have learned my languages from C, C++, Basic, Python and Java just to name a few. I also have an expertise
