@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <NavigationBar/>
-      <Container bsPrefix="owl" fluid>
+      <Container fluid>
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/About" component={About}/>
