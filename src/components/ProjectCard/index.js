@@ -1,15 +1,21 @@
-import React from 'react';
+import Card from 'react-bootstrap/Card';
 
-class ProjectRow extends React.Component {
-  render(){
-    const project = this.props.project;
-    return(
-      <tr>
-        <td>{project.name}</td>
-        <td>{project.description} Visit the <a href={project.link}>project</a> or the <a href={project.github}>repository</a>.</td>
-      </tr>
-    );
-  }
-}
+export default function ProjectCard(props){
+  const project = props.project;
 
-export default ProjectRow;
+  return(
+    <Card>
+      <Card.Img variant="top" src={project.preview} />
+      <Card.Body>
+        <Card.Title>{project.name}</Card.Title>
+        <Card.Text>
+          {project.description}
+        </Card.Text>
+        <Card.Body>
+          <Card.Link href={project.link}>Project</Card.Link>
+          <Card.Link href={project.github}>Github</Card.Link>
+        </Card.Body>
+      </Card.Body>
+    </Card>
+  );
+};
