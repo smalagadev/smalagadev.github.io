@@ -1,4 +1,4 @@
-import ProjectTable from './../../components/ProjectTable';
+import ProjectCardColumns from './../../components/ProjectCardColumns';
 
 function Projects(){
   const PROJECTS =
@@ -50,7 +50,7 @@ function Projects(){
     <>
       <h1>Projects</h1>
       <br/>
-      <ProjectTable projects={PROJECTS} />
+      <ProjectCardColumns projects={PROJECTS} />
     </>
   );
 }
