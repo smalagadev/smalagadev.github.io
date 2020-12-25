@@ -1,5 +1,6 @@
 import ProjectRow from './../ProjectRow';
 import React from 'react';
+import Table from 'react-bootstrap/Table';
 
 class ProjectTable extends React.Component{
   render(){
@@ -11,7 +12,7 @@ class ProjectTable extends React.Component{
 
     return(
       <>
-        <table class="table">
+        <Table variant="dark">
           <thead>
             <tr>
               <th scope="col" id="name-column">Name</th>
@@ -21,8 +22,7 @@ class ProjectTable extends React.Component{
           <tbody id="project-list">
             {rows}
           </tbody>
-        </table>
-        <hr/>
+        </Table>
       </>
     );
   }
