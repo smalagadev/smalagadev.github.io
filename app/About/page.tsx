@@ -8,7 +8,7 @@ export default function About() {
       <NavigationBar /> 
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <h1>About</h1>
-        <Image src="assets/images/profile.jpg" className="card-img" id="profile-image"/>
+        <Image src="assets/images/profile.jpg" className="card-img" id="profile-image" alt="Profile picture"/>
           <p className="card-text">
             A South Florida Native currently based in Atlanta, Georgia. I enjoy innovating solutions
             and creating new technology. I enjoy problem solving
