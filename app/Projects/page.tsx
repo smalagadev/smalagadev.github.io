@@ -49,7 +49,7 @@ export default function Projects() {
      name:"LIRI BOT",
      preview: "./assets/preview_images/LIRI.png",
      description: "LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data. There is no site link.",
-     link: false,
+     link: "",
      github: "https://github.com/smalagadev/LIRI"
    }
  ];
