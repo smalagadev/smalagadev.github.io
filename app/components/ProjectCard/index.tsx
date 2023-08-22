@@ -1,10 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 
-const ProjectCard = ({ name, preview, description, link, github}) => {
+interface ProjectCardProps {
+  name: string;
+  preview: string;
+  description: string;
+  link: string;
+  github: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ name, preview, description, link, github}) => {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden">
-        <Image src={preview} alt={name} className="w-full h-40 object-cover" />
+        <Image src={preview} alt={name} className="w-full h-40 object-cover"/>
         <div className="p-4">
             <h2 className="text-xl font-semibold mb-2">{name}</h2>
             <p className="text-gray-600 mb-4">{description}</p>
