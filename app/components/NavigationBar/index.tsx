@@ -4,6 +4,11 @@ import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import styles from './NavigationBar.module.css';
 
+interface NavItemProps {
+  path: string;
+  label: string;
+  currentPath: string;
+}
 
 export default function NavigationBar () {
     const router = useRouter();
@@ -21,7 +26,7 @@ export default function NavigationBar () {
     )
 }
 
-const NavItem = ({ path, label, currentPath }) => (
+const NavItem = ({ path, label, currentPath }: NavItemProps) => (
     <li className={`border-b-2 ${currentPath === path ? 'border-white' : ''}`}>
       <Link className={`text-white ${currentPath === path ? 'font-bold' : ''}`} href={path}>
         {label}
