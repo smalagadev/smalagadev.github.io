@@ -1,13 +1,13 @@
 'use client'
 
 import Link from 'next/link';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname} from 'next/navigation';
 import styles from './NavigationBar.module.css';
 
 interface NavItemProps {
   path: string;
   label: string;
-  currentPath: string;
+  currentPath: any;
 }
 
 export default function NavigationBar () {
